@@ -5,12 +5,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ToDo-Today</title>
-
+    <link rel="stylesheet" href="css/reset.css">
+    <!-- <link rel="stylesheet" href="css/normalize.css"> -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
+    <div class="header">
+        <div class="login">
+            <div class="before-login hidden">
+                <input type="text" id="inputLogin" placeholder="Write Your Name."/>
+                <button class="w-btn w-btn-indigo" type="button" id="btnLogin">Login</button>
+            </div>
+            <div class="after-login hidden">
+                <span id="txtLogin"></span>
+                <button class="w-btn w-btn-indigo" type="button" id="btnLogout" >Logout</button>
+            </div>
+        </div>
+        <div class="clock">
+            <h2 id="clock"></h2>
+        </div>
+        
+    </div>
+    
+    <div class="main">
+        <section class="center">
+            <div class="quote hidden">
+                <h2 class="quote quote-msg" id="quoteMsg">A quitter never wins and a winner never quits</h2>
+                <h2 class="quote quote-author" id="quoteAuthor">Napoleon Hill</h2>
+            </div>
+            <div class="todo-input hidden">
+                <input placeholder="Write to do list today " id="inputTodo" type="text" />
+                <button class="w-btn w-btn-gray" type="button" id="btnTodo">Add</button>
+            </div>
+            <div class="todo-list hidden">
+                <ul id="todoUl">
 
+                </ul>
+            </div>
+        </section>
+
+    </div>
+
+    <div class="footer">
+        <div id="weather">
+            <span></span>&nbsp;|
+            &nbsp;<span></span>
+        </div>
+    </div>
+
+    <script src="js/background.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/quote.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/greeting.js"></script>
+    
 
 </body>
 
